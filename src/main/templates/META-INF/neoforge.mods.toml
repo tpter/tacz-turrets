@@ -1,0 +1,79 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="TACZ Turrets"
+description='''
+Three turret bases that fire TACZ guns.
+
+1. Fixed Turret: an AeroIE turret body bolted to a Sable physics block. It never
+   rotates on its own; it only follows the physics body it is mounted on.
+2. Control Seat Turret: an AeroIE turret body that is linked to an AeroIE control
+   seat. It follows the seat occupant's mouse aim and fires on the seat fire key.
+3. Create Turret: a turret body driven by a Create Big Cannons cannon mount. Yaw
+   and pitch shaft speed is read from the mount and applied to the turret, and the
+   mount's redstone fire signal triggers shooting.
+
+All three use TACZ guns and TACZ ammo. TACZ ammo items, TACZ ammo boxes and TACZ
+infinite ammo boxes can be loaded; matching ammo type is enforced by TACZ itself.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="tacz"
+    type="required"
+    versionRange="[1.2.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="vsie"
+    type="required"
+    versionRange="[1.1.10,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="sable"
+    type="required"
+    versionRange="[2.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="create"
+    type="required"
+    versionRange="[6.0.7,6.1.0)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="createbigcannons"
+    type="required"
+    versionRange="[5.11.7,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="geckolib"
+    type="required"
+    versionRange="[4.9.0,)"
+    ordering="AFTER"
+    side="BOTH"

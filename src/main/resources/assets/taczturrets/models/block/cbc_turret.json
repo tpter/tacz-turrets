@@ -1,0 +1,46 @@
+{
+  "textures": {
+    "particle": "minecraft:block/smooth_stone",
+    "base": "minecraft:block/smooth_stone",
+    "post": "minecraft:block/polished_andesite",
+    "marker": "minecraft:block/redstone_block"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 4, 16],
+      "faces": {
+        "down": { "texture": "#base" },
+        "up": { "texture": "#base" },
+        "north": { "texture": "#base" },
+        "south": { "texture": "#base" },
+        "west": { "texture": "#base" },
+        "east": { "texture": "#base" }
+      }
+    },
+    {
+      "from": [4, 4, 4],
+      "to": [12, 11, 12],
+      "faces": {
+        "down": { "texture": "#post" },
+        "up": { "texture": "#post" },
+        "north": { "texture": "#post" },
+        "south": { "texture": "#post" },
+        "west": { "texture": "#post" },
+        "east": { "texture": "#post" }
+      }
+    },
+    {
+      "from": [7, 1, 0],
+      "to": [9, 3, 1],
+      "faces": {
+        "down": { "texture": "#marker" },
+        "up": { "texture": "#marker" },
+        "north": { "texture": "#marker" },
+        "south": { "texture": "#marker" },
+        "west": { "texture": "#marker" },
+        "east": { "texture": "#marker" }
+      }
+    }
+  ]
+}

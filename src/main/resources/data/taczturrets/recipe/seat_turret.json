@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BCB",
+    "PSP",
+    "AAA"
+  ],
+  "key": {
+    "B": { "item": "create:brass_casing" },
+    "C": { "item": "create:cogwheel" },
+    "P": { "item": "create:precision_mechanism" },
+    "S": { "item": "create:shaft" },
+    "A": { "item": "create:andesite_alloy" }
+  },
+  "result": { "id": "taczturrets:seat_turret", "count": 1 }
+}
