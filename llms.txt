@@ -1,0 +1,43 @@
+# TACZ Turrets
+
+> A NeoForge 1.21.1 Minecraft mod that adds three turret bases firing TACZ (Timeless and Classics Zero / 永恒枪械工坊：零) guns, with full ballistic, explosion, sound and tracer behavior preserved.
+
+## Key facts
+
+- Mod ID: `taczturrets`
+- Display name: TACZ Turrets
+- Loader: NeoForge (21.1.x)
+- Minecraft: 1.21.1
+- Language: Java 21
+- License: MIT
+
+## What it adds (three turret bases)
+
+1. **Fixed Turret** (`fixed_turret`) — an AeroIE turret body bolted to a Sable physics block. It never rotates on its own; it only follows the physics body it is mounted on. Fires via a linked AeroIE control seat's fire key.
+2. **Control Seat Turret** (`seat_turret`) — an AeroIE turret body linked to an AeroIE control seat with the AeroIE linker item. It follows the seat occupant's mouse aim and fires on the seat's fire key.
+3. **Create Turret** (`cbc_turret`) — a turret body driven by a Create: Big Cannons cannon mount. Yaw and pitch shaft speed is read from the mount and applied to the turret; the mount's redstone fire signal triggers shooting; ammo can be inserted by Create mechanical arms.
+
+## Ammo
+
+All three load TACZ ammo items, TACZ ammo boxes, and TACZ infinite ammo boxes. Ammo type must match the installed gun (enforced by TACZ). Ammo boxes are drained but not consumed; infinite ammo boxes consume nothing.
+
+## Controls
+
+- Install a gun: right-click with a TACZ gun (or the install-gun keybind). Installing clears the gun's internal magazine so the turret's 9 ammo slots are the only source.
+- Load ammo: right-click with TACZ ammo / ammo box.
+- Open menu: empty-hand right-click (or the open-menu keybind). Menu has a gun slot, 9 ammo slots, and numeric fields for scale, position offset, initial yaw/pitch, and weapon channel (1–4, matching AeroIE control-seat channels).
+- Rotate facing: right-click with a Create wrench.
+- Live model tuning (no restart): in-game `/tczmodel` command (`list` / `set` / `add` / `save`) for fixed/seat/mount yaw/pitch/roll.
+
+## Dependencies
+
+NeoForge 21.1.x, Minecraft 1.21.1, TACZ 1.2.0+, AeroIE (`vsie`) 1.1.10+, Sable 2.0.0+, Create 6.0.7–6.1.0, Create: Big Cannons 5.11.7+, GeckoLib 4.9.0+.
+
+## Links
+
+- Source: https://github.com/tpter/tacz-turrets
+- TACZ: https://modrinth.com/mod/tacz
+- AeroIE: https://modrinth.com/mod/aeroie
+- Sable: https://modrinth.com/mod/sable
+- Create: https://modrinth.com/mod/create
+- Create: Big Cannons: https://modrinth.com/mod/create-big-cannons
